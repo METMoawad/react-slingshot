@@ -14,14 +14,14 @@ jobs:
       # Checkout the code as the first step.
       - checkout
       - run: npm run lint
-test:
+  test:
     docker:
       - image: circleci/node:13.8.0
     steps:
       # Checkout the code as the first step.
       - checkout
       - run: npm run test
-analyze:
+  analyze:
     docker:
       - image: circleci/node:13.8.0
     steps:
